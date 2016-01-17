@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="myPrimaryColor">#4284F5</color>
+    <color name="myPrimaryDarkColor">#3870d0</color>
+    <color name="myAccentColor">#fe5151</color>
+    <color name="myDrawerBackground">#F2F2F2</color>
+    <color name="myWindowBackground">#F5F5F5</color>
+    <color name="myTextPrimaryColor">#FFFFFF</color>
+    <color name="mySearchToggleColor">#7F7F7F</color>
+    <color name="menu_text_color">#444444</color>
+    <color name="default_mask_background_white">#A0FFFFFF</color>
+    <!-- Navigation Color is 30% black mask attack to primary color -->
+    <color name="myNavigationColor">#2E5CAB</color>
+    <color name="myNavigationColorWhite">#B2B2B2</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="device_item_white">#FFFFFF</color>
+    <color name="menu_transparent">#00FFFFFF</color>
+    <color name="menu_item_blue">#3487f4</color>
+    <color name="menu_item_blue_dark">#2F79DB</color>
+    <color name="menu_item_grey">#ffdbdbdb</color>
+    <color name="menu_item_white">#FFFFFF</color>
+    <color name="menu_background">#FFFFFF</color>
+    <color name="device_item_title">#F44336</color>
+    <color name="forest_green">#228B22</color>
+    <color name="siecom_yellow">#f6aa3e</color>
+    <color name="dlgTitleColor">#4D4D4D</color>
+    <color name="dlgContentColor">#666666</color>
+    <color name="dlgBackgroundColor">#FAFAFA</color>
+    <color name="dlgPositiveButtonColor">#3870d0</color>
+    <color name="dlgNegativeButtonColor">#444444</color>
+    <color name="dlgDividerColor">#DADADA</color>
+    <!-- Google Progress Bar Color -->
+    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+    <integer-array name="gplus_colors">
+        <item>@color/red</item>
+        <item>@color/blue</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+    </integer-array>
+</resources>

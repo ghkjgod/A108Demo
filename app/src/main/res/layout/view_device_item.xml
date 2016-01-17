@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card-view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="2dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/novel_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card-view:cardBackgroundColor="@color/device_item_white"
+        card-view:cardElevation="2dp"
+        card-view:cardPreventCornerOverlap="true"
+        card-view:cardUseCompatPadding="true"
+        card-view:cardMaxElevation="2dp">
+
+
+        <LinearLayout
+            android:id="@+id/item_card"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/btn_menu_item"
+            android:orientation="horizontal">
+
+            <!-- have to fix the size, or it's a bit  -->
+            <ImageView
+                android:id="@+id/device_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="8dp"
+                android:transitionName="device_icon"
+                android:src="@mipmap/penguin"
+                android:scaleType="fitXY"
+
+                 />
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="0dp"
+                android:adjustViewBounds="true"
+                android:minHeight="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/device_name"
+                    android:transitionName="device_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/device_name"
+                    android:textColor="@color/device_item_title"
+                    android:singleLine="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:id="@+id/device_mac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/device_name"
+                    android:singleLine="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/device_mac"
+                    />
+                <TextView
+                    android:id="@+id/device_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/device_mac"
+                    android:singleLine="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:id="@+id/power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/power"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

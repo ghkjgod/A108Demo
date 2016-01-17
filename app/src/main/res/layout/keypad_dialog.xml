@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:id="@+id/main_key_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="50%"
+            app:layout_marginTopPercent="5%"
+            app:layout_marginLeftPercent="5%"
+            android:gravity="center"
+            android:text="@string/main_key"
+            android:textSize="10sp" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/input_mkey_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="35%"
+            app:layout_marginTopPercent="5%"
+            app:layout_marginRightPercent="5%"
+            android:text="@string/input_main_key"
+            android:textColor="@color/white"
+            app:rd_enable="true"
+            android:background="@drawable/round_button"
+            android:layout_alignBaseline="@+id/main_key_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+           />
+
+        <TextView
+            android:id="@+id/work_key_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="50%"
+            app:layout_marginTopPercent="20%"
+            app:layout_marginLeftPercent="5%"
+            android:gravity="center"
+            android:text="@string/work_key"
+            android:textSize="10sp" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/input_wkey_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="35%"
+            app:layout_marginTopPercent="20%"
+            app:layout_marginRightPercent="5%"
+            android:layout_alignBaseline="@+id/work_key_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_button"
+            android:text="@string/input_work_key"
+            android:textColor="@color/white"
+            app:rd_enable="true" />
+
+        <TextView
+            android:id="@+id/card_no_str"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="80%"
+            app:layout_marginTopPercent="35%"
+            app:layout_marginLeftPercent="10%"
+            android:layout_centerVertical="true"
+            android:hint="@string/card_no"
+            android:gravity="center"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/amount_str"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="80%"
+            app:layout_marginTopPercent="5%"
+            app:layout_marginLeftPercent="10%"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/card_no_str"
+            android:gravity="center"
+            android:hint="@string/amount"
+            android:textSize="12sp"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/click_input"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="80%"
+            app:layout_marginTopPercent="5%"
+            app:layout_marginLeftPercent="10%"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/amount_str"
+            android:ems="16"
+            android:gravity="center"
+            android:hint="@string/click_input" />
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>

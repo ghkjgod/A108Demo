@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="card_type">
+        <item>IC卡</item>
+        <item>磁卡 </item>
+        <item>非接卡</item>
+        <item>自动</item>
+    </string-array>
+</resources>

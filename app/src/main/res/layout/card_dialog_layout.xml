@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_gravity="center_horizontal">
+        <com.rey.material.widget.Spinner
+            style="@style/Material.Widget.Spinner"
+            android:id="@+id/card_list_spinner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="50%"
+            app:layout_marginTopPercent="5%"
+            app:layout_marginLeftPercent="5%"
+            android:gravity="center"
+            app:rd_style="@style/Material.Drawable.Ripple.Wave"/>
+
+        <com.rey.material.widget.Button
+            android:id="@+id/read_card_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="35%"
+            app:layout_marginTopPercent="5%"
+            app:layout_marginRightPercent="5%"
+            android:text="@string/readCard"
+            android:textColor="@color/white"
+            app:rd_enable="true"
+            android:background="@drawable/round_button"
+            android:layout_alignBaseline="@+id/card_list"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="5%"
+            app:layout_widthPercent="30%"
+            app:layout_marginTopPercent="20%"
+            app:layout_marginLeftPercent="5%"
+            android:gravity="center"
+            android:text="@string/CardNo"
+             />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="5%"
+            app:layout_widthPercent="45%"
+            app:layout_marginTopPercent="20%"
+            app:layout_marginLeftPercent="45%"
+            android:gravity="center"
+            android:id="@+id/card_no_text"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="5%"
+            app:layout_widthPercent="30%"
+            app:layout_marginTopPercent="35%"
+            app:layout_marginLeftPercent="5%"
+            android:gravity="center"
+            android:text="@string/CardType"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="5%"
+            app:layout_widthPercent="35%"
+            app:layout_marginTopPercent="35%"
+            app:layout_marginLeftPercent="45%"
+            android:gravity="center"
+            android:id="@+id/card_type_text"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="5%"
+            app:layout_widthPercent="35%"
+            app:layout_marginTopPercent="45%"
+            app:layout_marginLeftPercent="25%"
+            android:gravity="center"
+            android:text="@string/CardInfo"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="80%"
+            app:layout_marginTopPercent="50%"
+            app:layout_marginLeftPercent="10%"
+            android:id="@+id/card_info_text"
+            android:layout_gravity="center_horizontal" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/get_log_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="30%"
+            app:layout_marginTopPercent="85%"
+            app:layout_marginLeftPercent="5%"
+            android:text="@string/getLog"
+            android:textColor="@color/white"
+            app:rd_enable="true"
+            android:background="@drawable/round_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible"
+            />
+        <com.rey.material.widget.Button
+            android:id="@+id/arpc_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="30%"
+            app:layout_marginTopPercent="85%"
+            app:layout_marginLeftPercent="45%"
+            android:text="@string/arpc"
+            android:textColor="@color/white"
+            app:rd_enable="true"
+            android:background="@drawable/round_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible"
+            />
+    </android.support.percent.PercentRelativeLayout >
+
+
+</LinearLayout>
